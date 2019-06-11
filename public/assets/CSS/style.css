@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  overflow: auto;
+}
+
+body{background: orange;}
+
+.background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-image: url("../images/circleshrink.gif");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: -10;
+}
+
+.tableRow {
+  border: 2px solid black;
+}
+
+#contentPanel {
+  background-image: url("../images/contentBg.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
+  height: 350px;
+  width: 800px;
+  margin: auto;
+  padding-top: 25px;
+  background-color: rgba(0,0,0,0);
+  filter: drop-shadow(5px 5px #563420);
+}
+
+#content {
+  font-family: Quicksand;
+  font-size: 20px;
+  height: 288px;
+  width: 715px;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+.dropbtn {
+  background-image: url("../images/button2.png");
+  background-color: transparent;
+  background-size: cover;
+  filter: drop-shadow(5px 5px #563420);
+  color: white;
+  height: 59px;
+  width: 91px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.dropbtn:active, #btnOne:active, #btnThree:active, #btnFour:active {
+  position: relative;
+  filter: drop-shadow(4px 4px #563420);
+  left: 1px;
+  top: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+  margin-left: 12px;
+  text-align: center;
+  max-width: 75px;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: white;
+  background-color: #563420;
+  font-family: Quicksand;
+  max-width: 75px;
+  padding: 5px 0px 5px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display:block;}
+
+.text {
+  text-align: center;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleBar > #siteLogo {order: 1;}
+.titleBar > .navBar {order: 2;}
+
+.artImage {
+  height: 200px;
+  width: auto;
+  margin: 30px 5px 0px 5px;
+  filter: drop-shadow(5px 5px #563420);
+}
+
+.noOutline {
+  outline: none;
+}
+
+#siteLogo {
+  position: relative;
+  width: 625px;
+  height: auto;
+  z-index: 1;
+  filter: drop-shadow(5px 5px #563420);
+}
+
+#btnOne {
+  background-image: url("../images/button1.png");
+  background-color: transparent;
+  background-size: cover;
+  filter: drop-shadow(5px 5px #563420);
+  border: none;
+  height: 46px;
+  width: 81px;
+}
+
+#btnThree {
+  background-image: url("../images/button3.png");
+  background-color: transparent;
+  background-size: cover;
+  filter: drop-shadow(5px 5px #563420);
+  border: none;
+  height: 60px;
+  width: 79px;
+}
+
+#btnFour {
+  background-image: url("../images/button4.png");
+  background-color: transparent;
+  background-size: cover;
+  filter: drop-shadow(5px 5px #563420);
+  border: none;
+  height: 51px;
+  width: 121px;
+}
+
+#instaContact {
+  display: none;
+  background-image: url("../images/instaLogo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(5px 5px #563420);
+}
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+#fullscreenArt {
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  display: none;
+  z-index: 3;
+}
+
+#closeButton {
+  height: 60px;
+  width: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+}
+
+#artDiv {
+  position: relative;
+  
+  margin: auto;
+  border: 2px black solid;
+  background-size: cover;
+}
