@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+/* 
+/   ELEMENTS 
+*/
+button {
+  margin-left: 5px;
+}
+
 html, body {
   height: 100%;
   margin: 0px;
@@ -8,6 +15,11 @@ html, body {
 
 body{background: orange;}
 
+
+
+/* 
+/   CLASSES
+*/
 .background-image {
   position: absolute;
   height: 100%;
@@ -20,10 +32,23 @@ body{background: orange;}
   z-index: -10;
 }
 
-.tableRow {
-  border: 2px solid black;
+.titleBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.artImage {
+  height: 200px;
+  width: auto;
+  margin: 30px 5px 0px 5px;
+  filter: drop-shadow(5px 5px #563420);
+}
+
+
+/* 
+/   IDS
+ */
 #contentPanel {
   background-image: url("../images/contentBg.png");
   background-repeat: no-repeat;
@@ -37,7 +62,7 @@ body{background: orange;}
   filter: drop-shadow(5px 5px #563420);
 }
 
-#content {
+#contentPanel div {
   font-family: Quicksand;
   font-size: 20px;
   height: 288px;
@@ -45,79 +70,6 @@ body{background: orange;}
   position: relative;
   top: 10px;
   left: 40px;
-}
-
-.dropbtn {
-  background-image: url("../images/button2.png");
-  background-color: transparent;
-  background-size: cover;
-  filter: drop-shadow(5px 5px #563420);
-  color: white;
-  height: 59px;
-  width: 91px;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.dropbtn:active, #btnOne:active, #btnThree:active, #btnFour:active {
-  position: relative;
-  filter: drop-shadow(4px 4px #563420);
-  left: 1px;
-  top: 1px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: rgba(0,0,0,0);
-  margin-left: 12px;
-  text-align: center;
-  max-width: 75px;
-  z-index: 1;
-}
-
-.dropdownContent a {
-  color: white;
-  background-color: #563420;
-  font-family: Quicksand;
-  max-width: 75px;
-  padding: 5px 0px 5px 0px;
-  text-decoration: none;
-  display: block;
-}
-
-.show {display:block;}
-
-.text {
-  text-align: center;
-}
-
-.titleBar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleBar > #siteLogo {order: 1;}
-.titleBar > .navBar {order: 2;}
-
-.artImage {
-  height: 200px;
-  width: auto;
-  margin: 30px 5px 0px 5px;
-  filter: drop-shadow(5px 5px #563420);
-}
-
-.noOutline {
-  outline: none;
 }
 
 #siteLogo {
@@ -128,32 +80,42 @@ body{background: orange;}
   filter: drop-shadow(5px 5px #563420);
 }
 
-#btnOne {
-  background-image: url("../images/button1.png");
+#artBtn, #portfolioBtn, #aboutBtn, #contactBtn {
   background-color: transparent;
   background-size: cover;
   filter: drop-shadow(5px 5px #563420);
   border: none;
+  outline: none;
+}
+
+#artBtn:hover, #portfolioBtn:hover, #aboutBtn:hover, #contactBtn:hover, #instaContact:hover {
+  transform: scale(1.1);
+}
+
+#artBtn:active, #portfolioBtn:active, #aboutBtn:active, #contactBtn:active, #instaContact:active {
+  transform: scale(1.05);
+}
+
+#artBtn {
+  background-image: url("../images/button1.png");
   height: 46px;
   width: 81px;
 }
 
-#btnThree {
+#portfolioBtn {
+  background-image: url("../images/button2.png");
+  height: 59px;
+  width: 90px;
+}
+
+#aboutBtn {
   background-image: url("../images/button3.png");
-  background-color: transparent;
-  background-size: cover;
-  filter: drop-shadow(5px 5px #563420);
-  border: none;
   height: 60px;
   width: 79px;
 }
 
-#btnFour {
+#contactBtn {
   background-image: url("../images/button4.png");
-  background-color: transparent;
-  background-size: cover;
-  filter: drop-shadow(5px 5px #563420);
-  border: none;
   height: 51px;
   width: 121px;
 }
@@ -169,37 +131,4 @@ body{background: orange;}
   margin-left: auto;
   margin-right: auto;
   filter: drop-shadow(5px 5px #563420);
-}
-
-@keyframes fadeIn {
-  from{opacity: 0;}
-  to{opacity: 1;}
-}
-
-#fullscreenArt {
-  animation-name: fadeIn;
-  animation-duration: 0.2s;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  display: none;
-  z-index: 3;
-}
-
-#closeButton {
-  height: 60px;
-  width: 60px;
-  background-color: #bbb;
-  border-radius: 50%;
-  position: absolute;
-  right: 0px;
-}
-
-#artDiv {
-  position: relative;
-  
-  margin: auto;
-  border: 2px black solid;
-  background-size: cover;
 }

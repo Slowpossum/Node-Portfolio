@@ -8,46 +8,47 @@
 
   <!-- CSS -->
   <link href="./assets/CSS/style.css?v=1.1" type="text/css" rel="stylesheet">
+  
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="./assets/javascript/scripts.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+  <script src="./assets/javascript/htmlInsertions.js" defer></script>
+  <script src="./assets/javascript/scripts.js" defer></script>
 
   <title>Slowpossum's Den</title>
 </head>
 
-<body onload="aboutClick()">
+<body>
   <div class="background-image"></div>
-  <div id="fullscreenArt">
-    <div id="closeButton" onclick="closeArt()"></div>
-    <div id="artDiv"></div>
-  </div>
 
   <div class="titleBar">
     <img id="siteLogo" src="./assets/images/full logo.png" alt="Slowpossum's Den Logo">
 
     <div class="navBar" style="min-width: 384px;">
-      <button onclick="artClick()" id="btnOne" class="noOutline"></button>
+      <button id="artBtn"></button>
 
-      <div class="dropdown noOutline">
+      <button id="portfolioBtn"></button>
+      <!-- <div class="dropdown noOutline">
         <button onclick="dropDownFunction()" class="dropbtn noOutline"></button>
         <div id="dropdownOne" class="dropdownContent">
           <a href="./Bear/Animation.html" target="_blank">Bear Animation</a>
           <a href="./fanpage.html" target="_blank">Fanpage</a>
           <img src="./assets/images/dropdownBottom.png">
         </div>
-      </div>
+      </div> -->
 
-      <button onclick="aboutClick()" id="btnThree" class="noOutline"></button>
-      <button onclick="contactClick()" id="btnFour" class="noOutline"></button>
+      <button id="aboutBtn"></button>
+      <button id="contactBtn"></button>
     </div>
   </div>
 
   <div id="contentPanel">
-    <div id="content">
+    <div>
 
     </div>
   </div>
 
-  <button onclick="window.open('https://www.instagram.com/slowpossum/','_blank')" id="instaContact"></button>
+  <!-- <button onclick="window.open('https://www.instagram.com/slowpossum/','_blank')" id="instaContact"></button> -->
+  <a href="https://www.instagram.com/slowpossum/" target="_blank"><button id="instaContact"></button></a>
 </body>
 
 </html>
