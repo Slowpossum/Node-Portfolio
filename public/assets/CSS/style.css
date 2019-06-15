@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /* 
+/   SCROLLBARS
+*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 8px;
+  background: #af6812;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #563420; 
+}
+
+
+/* 
 /   ELEMENTS 
 */
 html, body {
@@ -63,6 +87,7 @@ body {
 }
 
 .desc {
+  display: none;
   height: 167px;
   width: 200px;
   margin-left: 8px;
@@ -92,7 +117,14 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none!important;
+}
+
+.thumbnail {
+  height: 200px;
+  width: auto;
+  margin: 0px 10px 0px 10px;
+  filter: drop-shadow(5px 5px #563420);
 }
 
 
@@ -139,11 +171,11 @@ body {
   outline: none;
 }
 
-#artBtn:hover, #portfolioBtn:hover, #aboutBtn:hover, #contactBtn:hover, #instaContact:hover {
+.zoom:active {
   transform: scale(1.1);
 }
 
-#artBtn:active, #portfolioBtn:active, #aboutBtn:active, #contactBtn:active, #instaContact:active {
+.zoom:hover {
   transform: scale(1.05);
 }
 
@@ -171,15 +203,7 @@ body {
   width: 121px;
 }
 
-#instaContact {
-  display: none;
-  background-image: url("../images/websiteImages/instaLogo.png");
-  background-size: cover;
-  background-color: transparent;
-  border: none;
-  height: 150px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  filter: drop-shadow(5px 5px #563420);
+#contacts {
+  display: flex;
+  justify-content: center;
 }

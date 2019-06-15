@@ -1,14 +1,18 @@
 const aboutHTML = `
-<p>My name is Thomas, I'm an artist and future web dev from RVA.</p>
-<p>This is just a simple page I built to kill some time and act as a host/portfolio of sorts for
-current and future projects.</p>
+<p>My name is Thomas, I'm an artist and front-end web dev from RVA.</p>
+<p>I'm particularly interested in the creation and application of
+interesting and interactive web-based technologies in regards to UI/UX design.</p>
+<p>I'm experienced in: <b>HTML, CSS, javascript, jquery, node.js</b> (including <b>handlebars</b> 
+and <b>express</b> for routing), <b>mongoDB, and MySQL</b>.</p>
+<p>I also enjoy art, listening to terrible music, and the world's greatest,
+most benevolent animal: <b>the opossum</b>.</p>
  `;
 
 const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/fieldPET.png">
         
-    <div class="hidden desc" style="height: 174px">
+    <div class="desc" style="height: 174px">
         <p><b>June 2019</b></p>
         <p>FieldPET aimed to provide a simple and functional interface
         for those doing water quality tests on streams in Virginia.</p>
@@ -24,7 +28,7 @@ const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/hebrewCalendar.png">
         
-    <div class="hidden desc" style="height: 167px">
+    <div class="desc" style="height: 167px">
         <p><b>April 2019</b></p>
         <p>Hebrew Calendar was a project aimed around providing an easy to use
         interface for converting between hebrew and gregorian calendar dates.</p>
@@ -44,7 +48,7 @@ const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/subwayGame.png">
         
-    <div class="hidden desc" style="height: 164px">
+    <div class="desc" style="height: 164px">
         <p><b>March 2019</b></p>
         <p>This was originally intended to be a simple game to practice
         javascript logic and timers, but I expanded the scope to include
@@ -63,7 +67,7 @@ const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/gifsGalore.png">
         
-    <div class="hidden desc" style="height: 168px">
+    <div class="desc" style="height: 168px">
         <p><b>March 2019</b></p>
         <p>Gifs Galore was my first step into making ajax calls using jquery, 
         using APIs, and local storage. I also wanted to try more interactive design
@@ -79,7 +83,7 @@ const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/hangman.png">
         
-    <div class="hidden desc" style="height: 164px">
+    <div class="desc" style="height: 164px">
         <p><b>March 2019</b></p>
         <p>This was my first foray into HTML5 canvas. It's a very
         simple hangman clone without too many bells and whistles.
@@ -95,7 +99,7 @@ const portfolioHTML = `
 <div class="portfolioItem">
     <img src="./assets/images/portfolioImages/fanpage.png">
         
-    <div class="hidden desc" style="height: 185px">
+    <div class="desc" style="height: 185px">
         <p><b>January 2019</b></p>
         <p>Despite being one of the first websites I made, I
         still really enjoy the layout of this one; it's clean
