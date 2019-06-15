@@ -1,6 +1,16 @@
-var express = require("express");
-var path = require('path');
+const path = require('path');
+const fs = require('fs');
 
-router.get("/api/images/", function (req, res) {
-    res.json(images);
-});
+const artFolder = "../public/assets/images/art";
+
+module.exports = app => {
+    app.get('/images', (req, res) => {
+        let images = [];
+
+        fs.readdirSync(path.join(__dirname, artFolder)).forEach(file => {
+            images.push(file);
+        });
+
+        res.json(images);
+    });
+};

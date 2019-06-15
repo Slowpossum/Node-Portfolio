@@ -3,18 +3,15 @@
 /* 
 /   ELEMENTS 
 */
-button {
-  margin-left: 5px;
-}
-
 html, body {
   height: 100%;
   margin: 0px;
   overflow: auto;
 }
 
-body{background: orange;}
-
+body {
+  background: orange;
+}
 
 
 /* 
@@ -25,7 +22,7 @@ body{background: orange;}
   height: 100%;
   width: 100%;
   margin: 0px;
-  background-image: url("../images/circleshrink.gif");
+  background-image: url("../images/websiteImages/circleshrink.gif");
   background-repeat: repeat;
   background-attachment: fixed;
   filter: blur(8px);
@@ -45,24 +42,77 @@ body{background: orange;}
   filter: drop-shadow(5px 5px #563420);
 }
 
+.flexContent {
+  display: flex;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.portfolioItem {
+  margin: 0px 5px 0px 5px;
+  display: flex;
+  transition-duration: 1000ms;
+  background-color: #D27F16;
+  border: 8px solid #D27F16;
+  border-radius: 5px;
+}
+
+.portfolioItem img {
+  height: 100%;
+  width: auto;
+}
+
+.desc {
+  height: 167px;
+  width: 200px;
+  margin-left: 8px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #FEA700;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.desc > p:nth-child(1) {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.desc p:not(:nth-child(1)) {
+  margin: 10px 0px 0px 0px;
+  white-space: normal;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.desc a {
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /* 
 /   IDS
  */
 #contentPanel {
-  background-image: url("../images/contentBg.png");
+  background-image: url("../images/websiteImages/contentBg.png");
   background-repeat: no-repeat;
   position: relative;
   top: 5px;
   height: 350px;
   width: 800px;
-  margin: auto;
+  margin: 10px auto;
   padding-top: 25px;
   background-color: rgba(0,0,0,0);
   filter: drop-shadow(5px 5px #563420);
 }
 
-#contentPanel div {
+#contentPanel > div:nth-child(1) {
   font-family: Quicksand;
   font-size: 20px;
   height: 288px;
@@ -74,13 +124,14 @@ body{background: orange;}
 
 #siteLogo {
   position: relative;
-  width: 625px;
+  width: 800px;
   height: auto;
   z-index: 1;
   filter: drop-shadow(5px 5px #563420);
 }
 
 #artBtn, #portfolioBtn, #aboutBtn, #contactBtn {
+  margin-right: 10px;
   background-color: transparent;
   background-size: cover;
   filter: drop-shadow(5px 5px #563420);
@@ -97,32 +148,32 @@ body{background: orange;}
 }
 
 #artBtn {
-  background-image: url("../images/button1.png");
+  background-image: url("../images/websiteImages/artButton.png");
   height: 46px;
   width: 81px;
 }
 
 #portfolioBtn {
-  background-image: url("../images/button2.png");
+  background-image: url("../images/websiteImages/portfolioButton.png");
   height: 59px;
   width: 90px;
 }
 
 #aboutBtn {
-  background-image: url("../images/button3.png");
+  background-image: url("../images/websiteImages/aboutButton.png");
   height: 60px;
   width: 79px;
 }
 
 #contactBtn {
-  background-image: url("../images/button4.png");
+  background-image: url("../images/websiteImages/contactButton.png");
   height: 51px;
   width: 121px;
 }
 
 #instaContact {
   display: none;
-  background-image: url("../images/instaLogo.png");
+  background-image: url("../images/websiteImages/instaLogo.png");
   background-size: cover;
   background-color: transparent;
   border: none;

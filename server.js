@@ -1,18 +1,17 @@
-var express = require("express");
+const express = require("express");
 
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-var app = express();
+const app = express();
 
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var routes = require("./routes/htmlRoutes.js");
+require("./routes/htmlRoutes.js")(app);
+require("./routes/apiRoutes.js")(app);
 
-app.use(routes);
-
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log("Server listening on: http://localhost:" + PORT);
 });
