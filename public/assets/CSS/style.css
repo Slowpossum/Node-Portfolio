@@ -204,6 +204,7 @@ body {
 }
 
 #contacts {
+  padding-top: 25px;
   display: flex;
   justify-content: center;
 }
