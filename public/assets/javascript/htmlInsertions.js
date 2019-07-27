@@ -11,18 +11,22 @@ most benevolent animal: <b>the opossum</b>.</p>
 
 const portfolioHTML = `
 <div class="portfolioItem">
-    <img src="./assets/images/portfolioImages/fieldPET.png">
+    <img src="./assets/images/portfolioImages/apotheca.png">
         
-    <div class="desc" style="height: 174px">
-        <p><b>June 2019</b></p>
-        <p>FieldPET aimed to provide a simple and functional interface
-        for those doing water quality tests on streams in Virginia.</p>
-        <p>I was in charge of designing the interface and setting up forms
-        to be used by the mySQL server backend. I also had the very important 
-        role of drawing the tiny mayfly next to the logo.</p>
-        <p><b>Credits:</b> Thomas Smith, Kensey Barker, Molly Levine, and Austin Kim</p>
-        <a href="https://github.com/kenzrad/fieldPET" target="_blank"><b>Github Link</b></a>
-        <a href="https://salty-savannah-46210.herokuapp.com/" target="_blank"><b>Deployed Link</b></a>
+    <div class="desc" style="height: 212px">
+        <p><b>July 2019</b></p>
+        <p>Apotheca is a full stack MERN application aimed towards delivering 
+        natural and healthy remedies for skin care based on a number of issues,
+        identified during account creation.</p>
+        <p>My job involved creating an simple and effective login, signup page, 
+        a way to gather the required information to identify the skin care 
+        issues to target, as well as the logic connecting the front end account 
+        creation to the mongo server using the backend's API routes.</p>
+        <p>I used vanilla javasvript and CSS to create an interesting and 
+        dynamic form for account creation and the quiz functionality.</p>
+        <p><b>Credits:</b> Thomas Smith, Kensey Barker, and Anna Warner</p>
+        <a href="https://github.com/kenzrad/apotheca" target="_blank"><b>Github Link</b></a>
+        <a href="https://enigmatic-meadow-75915.herokuapp.com/" target="_blank"><b>Deployed Link</b></a>
     </div>
 </div>
 
@@ -43,6 +47,22 @@ const portfolioHTML = `
         <p><b>Credits:</b> Thomas Smith, Austin Kim, and Travis Henson</p>
         <a href="https://github.com/Slowpossum/HebrewCalendar" target="_blank"><b>Github Link</b></a>
         <a href="https://slowpossum.github.io/HebrewCalendar/" target="_blank"><b>Deployed Link</b></a>
+    </div>
+</div>
+
+<div class="portfolioItem">
+    <img src="./assets/images/portfolioImages/fieldPET.png">
+        
+    <div class="desc" style="height: 174px">
+        <p><b>June 2019</b></p>
+        <p>FieldPET aimed to provide a simple and functional interface
+        for those doing water quality tests on streams in Virginia.</p>
+        <p>I was in charge of designing the interface and setting up forms
+        to be used by the mySQL server backend. I also had the very important 
+        role of drawing the tiny mayfly next to the logo.</p>
+        <p><b>Credits:</b> Thomas Smith, Kensey Barker, Molly Levine, and Austin Kim</p>
+        <a href="https://github.com/kenzrad/fieldPET" target="_blank"><b>Github Link</b></a>
+        <a href="https://salty-savannah-46210.herokuapp.com/" target="_blank"><b>Deployed Link</b></a>
     </div>
 </div>
 
