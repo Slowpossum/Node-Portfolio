@@ -1,4 +1,5 @@
 const aboutHTML = `
+<img class="headshot" src="./assets/images/websiteImages/headshot.jpg" alt="headshot">
 <p>My name is Thomas, I'm an artist and front-end web dev from RVA.</p>
 <p>I'm particularly interested in the creation and application of
 interesting and interactive web-based technologies in regards to UI/UX design.</p>

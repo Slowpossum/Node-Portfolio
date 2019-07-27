@@ -127,6 +127,12 @@ body {
   filter: drop-shadow(5px 5px #563420);
 }
 
+.headshot {
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
 
 /* 
 /   IDS
@@ -146,7 +152,7 @@ body {
 
 #contentPanel > div:nth-child(1) {
   font-family: Quicksand;
-  font-size: 20px;
+  font-size: 18px;
   height: 288px;
   width: 715px;
   position: relative;
